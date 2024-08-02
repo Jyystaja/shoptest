@@ -1,0 +1,164 @@
+body{
+    padding: 0;
+    margin:0;
+    height: 200vh;
+    overflow-x: hidden;
+}
+.topbar{
+    width: 100vw;
+    top:0;
+    height: 6vh;
+    background-color: black;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 999;
+    transition: top 0.3s; /* Smooth transition for hiding/showing */
+}
+.topbar-holder{
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+.topbar-holder2{
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 3%;
+}
+
+.topbar-holder2 button{
+    color: white;
+    flex: 0 1 auto;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-color: transparent;
+    margin:0px;
+    padding: 0px;
+    position: relative;
+    width: 10%;
+    height: 30%;
+
+}
+.topbar-holder3{
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+.bag{
+    width: auto; /* Limit the maximum width of the logo */
+    height: 40%;
+    position: relative;
+    right:10%;
+    top:0%;
+    padding: 0;
+    margin: 0;
+}
+.logo{
+    width: auto; /* Limit the maximum width of the logo */
+    height: 70%;
+    position: relative;
+    left:5%;
+    top:0%;
+    padding: 0;
+    margin: 0;
+}
+.nikeBanner{
+    position:relative;
+    height: 100vh;
+    width:100vw;
+    padding: 0;
+    margin:0;
+    top:6vh;
+    display: flex;
+    top:0;
+}
+.shoe1{
+    min-width: 27%;
+    height: auto;
+    position: relative;
+    animation: slowRotate 10s linear infinite;
+    
+}
+@keyframes slowRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    33% {
+        transform: rotate(5deg);
+    }
+    66% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.banner1{
+    position:absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pallot{
+    width: 25%;
+    height: 5%;
+    position:absolute;
+    bottom:5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+.pallot img{
+    width: 2%;
+    height: auto;
+
+}
+.left_arrow{
+    position: absolute;
+    height: 4%;
+    width: auto;
+    left:3%;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    z-index: 9;
+}
+.right_arrow{
+    position: absolute;
+    height: 4%;
+    width: auto;
+    right:3%;
+    transform: rotate(90deg);
+    cursor: pointer;
+    z-index: 9;
+}
+.shoe-holder{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap:50vw;
+    transition: left 1s ease-in-out;
+    left:36vw;
+    /*36vw -39vw -118vw */
+
+}
